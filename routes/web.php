@@ -19,9 +19,7 @@ Route::post('/register', [RegisterController::class, 'store'])->middleware('gues
 Route::get('/user-info', [UserInfoController::class, 'index']);
 Route::get('/user-info/create', [UserInfoController::class, 'create'])->name('user-info.create');
 Route::post('/user-info/create', [UserInfoController::class, 'store'])->name('user-info.store');
-
 Route::get('/user-info/show/{id}', [UserInfoController::class, 'show'])->name('user-info.show');
-
 Route::get('/user-info/edit/{id}', [UserInfoController::class, 'edit'])->name('user-info.edit');
 Route::post('/user-info/update/{id}', [UserInfoController::class, 'update'])->name('user-info.update');
 Route::get('/user-info/destroy/{id}', [UserInfoController::class, 'destroy'])->name('user-info.destroy');
