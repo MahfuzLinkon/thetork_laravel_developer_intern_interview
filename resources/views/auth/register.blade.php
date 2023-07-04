@@ -75,7 +75,12 @@
                                 <button type="submit" class="w-100 btn btn-primary">Register</button>
                             </div>
                             <div class="mt-3">
-                                <span>Already have account ? <a href="/login"> Login here</a> </span>
+                                <small>
+                                    Already have account ? <br>
+                                    <a href="/login"> Login here</a>
+                                    Or go to
+                                    <a href="/">Home Page</a>.
+                                </small>
                             </div>
                         </form>
                     </div>

@@ -24,7 +24,7 @@
                 </li>
                 @auth
                 <li class="nav-item">
-                    <a class="nav-link" href="">User Information</a>
+                    <a class="nav-link" href="/user-info">User Information</a>
                 </li>
                 <li class="nav-item">
 {{--                    <a class="nav-link" href="/logout">Logout</a>--}}

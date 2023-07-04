@@ -47,7 +47,8 @@
                                 <button type="submit" class="w-100 btn btn-primary">LogIn</button>
                             </div>
                             <div class="mt-3">
-                                <span>Don't have account ? <a href="/register"> Register here</a> </span>
+                                <small class="f-1">Don't have account ? <br> <a href="/register"> Register here </a>Or go to <a
+                                        href="/">Home Page</a>.</small>
                             </div>
                         </form>
                     </div>
