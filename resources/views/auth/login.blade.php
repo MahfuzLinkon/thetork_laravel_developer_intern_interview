@@ -9,7 +9,14 @@
                         <h4 class="text-center">Welcome</h4>
                     </div>
                     <div class="card-body p-5">
-                        <form action="">
+                        @if(Session::has('error'))
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <strong>Error: </strong> {{ Session::get('error') }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        @endif
+                        <form action="/login" method="post">
+                            @csrf
                             <div class="mb-3">
                                 <label for="email" class="form-label">
                                     Email
@@ -38,6 +45,9 @@
                             </div>
                             <div class="mt-4">
                                 <button type="submit" class="w-100 btn btn-primary">LogIn</button>
+                            </div>
+                            <div class="mt-3">
+                                <span>Don't have account ? <a href="/register"> Register here</a> </span>
                             </div>
                         </form>
                     </div>
